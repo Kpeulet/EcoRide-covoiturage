@@ -1,0 +1,141 @@
+/* frontEnd/css/style.css */
+
+/* Reset minimal pour la lisibilité */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header et Navigation */
+.main-header {
+    background-color: #007bff; /* Bleu EcoRide */
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* Layout de la page principale (index.html) */
+.main-layout {
+    display: flex;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.presentation-col, .search-col {
+    flex: 1;
+}
+
+/* Formulaire de recherche */
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input, .search-box button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-search {
+    background-color: #28a745; /* Vert */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* Conteneur de résultats */
+#results-container {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+#results-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#results-container li {
+    background: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Messages d'erreur */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* --- CSS de Base pour le Menu Déroulant (ajoutez ceci dans style.css) --- */
+
+/* Conteneur principal */
+.dropdown {
+  position: relative; /* Nécessaire pour positionner le contenu */
+  display: inline-block;
+}
+
+/* Le conteneur des liens déroulants - masqué par défaut */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /* Couleur de fond des sous-menus */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* AJOUTS CRUCIAUX ICI : */
+  z-index: 10;   /* Assure que le menu est au-dessus du reste */
+  right: 0;      /* Aligne le menu déroulant à droite sous le bouton "Mon espace" */
+}
+
+/* Les liens à l'intérieur du menu déroulant */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Changer la couleur des liens au survol */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Afficher le menu déroulant au survol du bouton/conteneur */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

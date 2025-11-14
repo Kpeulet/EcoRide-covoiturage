@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil - EcoRide</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content container">
+            <h1 class="logo">EcoRide</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formulaire-trajet.html">Proposer un trajet</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="profil.html">Mon espace</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Mon Espace Personnel</h2>
+        
+        <p id="auth-message" style="color: red;"></p>
+
+        <section id="user-info" class="card">
+            <h3>Mes informations</h3>
+            <p><strong>Nom :</strong> <span id="nom-utilisateur"></span></p>
+            <p><strong>Prénom :</strong> <span id="prenom-utilisateur"></span></p>
+            <p><strong>Email :</strong> <span id="email-utilisateur"></span></p>
+        </section>
+
+        <section id="trajets-proposes" class="card">
+            <h3>Trajets que je propose (Conducteur)</h3>
+            <ul id="liste-trajets-proposes">
+                </ul>
+        </section>
+
+        <section id="reservations" class="card">
+            <h3>Mes réservations (Passager)</h3>
+            <ul id="liste-reservations">
+                </ul>
+        </section>
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Contact : <a href="mailto:contact@ecoride.fr">contact@ecoride.fr</a></p>
+            <p>Mentions légal</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/profil.js"></script>
+
+</body>
+</html>
